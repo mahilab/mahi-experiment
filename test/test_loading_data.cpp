@@ -15,7 +15,7 @@ using namespace mahi::util;
 
 int main(int argc, char* argv[]) {
     // sometimes you may want this to be an absolute filepath just to make sure.
-    std::string filepath = "C:/Git/mahi-template/data/load_data/test_data.csv";
+    std::string filepath = "C:/Git/mahi-experiment/data/load_data/test_data.csv";
     
     // read back subset of header without offset
     // notice that this is an array here (not vector). It needs a size to read properly, and this is 

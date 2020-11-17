@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
 
     ////// GET MAPPING FOR THE SUBJECT //////
 
-    std::string filepath = "C:/Git/mahi-template/data/load_data/S" + std::to_string(subject_number) + ".csv";
+    std::string filepath = "C:/Git/mahi-experiment/data/load_data/S" + std::to_string(subject_number) + ".csv";
 
     auto subject_mapping = load_data(filepath);
 
@@ -179,7 +179,7 @@ int main(int argc, char* argv[]) {
     
     ////// SAVE DATA //////
     Timestamp ts;
-    std::string save_filepath = "C:/Git/mahi-template/data/save_data/S" + std::to_string(subject_number) + "data_" + ts.yyyy_mm_dd_hh_mm_ss() + ".csv";
+    std::string save_filepath = "C:/Git/mahi-experiment/data/save_data/S" + std::to_string(subject_number) + "data_" + ts.yyyy_mm_dd_hh_mm_ss() + ".csv";
     save_data(save_filepath, data);
 
     return 0;
